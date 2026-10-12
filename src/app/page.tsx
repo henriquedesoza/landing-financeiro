@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const features = [
   {
     icon: "🤖",
@@ -98,6 +100,20 @@ export default function Home() {
             >
               Falar com a equipe
             </a>
+          </div>
+          <div className="relative mx-auto mt-16 max-w-2xl">
+            <div
+              aria-hidden
+              className="absolute -inset-6 rounded-[2rem] bg-gradient-to-tr from-emerald-600/20 to-zinc-900 blur-2xl"
+            />
+            <Image
+              src="/cofre-moedas.jpg"
+              alt="Frasco de vidro com moedas e uma nota de dez reais, representando dinheiro guardado"
+              width={1920}
+              height={1280}
+              priority
+              className="relative w-full rounded-2xl border border-zinc-800 object-cover"
+            />
           </div>
         </section>
 
